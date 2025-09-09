@@ -2,24 +2,25 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>CSS 기초</title>
+  <title>Div와 박스</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff; /* 배경색 */
-    }
-    h1 {
-      color: #ff4500; /* 제목 색상 */
-    }
-    p {
-      color: #333333;
-      font-size: 18px;
+    .box {
+      width: 300px;
+      height: 150px;
+      background-color: #add8e6;
+      border: 2px solid #0000ff;
+      padding: 10px;
+      margin: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>안녕하세요</h1>
-  <p>배경색과 글자색을 CSS로 변경해보기</p>
-  <p>폰트도 변경해보기</p>
+  <h1>박스 만들기</h1>
+  <div class="box">
+    <p>이 박스 안에 글을 넣을 수 있어요.</p>
+  </div>
+  <div class="box">
+    <p>여러 개 박스를 만들 수 있어요.</p>
+  </div>
 </body>
 </html>
