@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>방명록</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>방명록</h1>
+  </header>
+  <main>
+    <div class="box">
+      <input type="text" id="greetingInput" placeholder="인삿말을 입력하세요">
+      <button onclick="addGreeting()">등록</button>
+    </div>
+    <div class="box">
+      <h2>방명록 목록</h2>
+      <ul id="greetingList">
+        <!-- 인삿말이 여기에 추가됩니다 -->
+      </ul>
+    </div>
+    <div class="box">
+      <button onclick="window.location.href='index.html'">자기소개 페이지로 돌아가기</button>
+    </div>
+  </main>
+</body>
+</html>
