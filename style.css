@@ -43,6 +43,6 @@ input[type="text"] {
 }
 
 ul {
-  list-style: circle;                 /* 리스트를 어떻게 정렬할지 디자인을 정해줌 */
+  list-style: none;                 /* 리스트를 어떻게 정렬할지 디자인을 정해줌 */
   padding-left: 0;
 }
