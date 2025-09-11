@@ -5,6 +5,12 @@
   <title>방명록</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <!-- 디자인을 위해 style.css를 연결했던 것과 같이, 동작을 위해 script.js를 연결한다 -->
+
+  <!-- stylesheet와 달리 js파일은 직접 실행할 수 있는 함수를 내포하고 있기 때문에 link로 연결하지 않는다 -->
+   
+  <!-- defer는 html과 js파일을 부르는 것이 동시에 일어나는 경우를 방지하기 위해 -->
+  <!-- js파일을 html파일 먼저 모두 읽은 후 불러오도록 설정하는 방식이다 -->
 </head>
 <body>
   <header>
@@ -13,13 +19,33 @@
   <main>
     <div class="box">
       <input type="text" id="greetingInput" placeholder="인삿말을 입력하세요">
+      <!-- type ="text"는 문자가 아닌 다른 입력값이 들어오는 것을 방지해준다 -->
+
+      <!-- id="greetingInput을 설정함을 통해 js파일에서 입력값을 id를 통해 조회할 수 있도록 한다" -->
+
+      <!-- placeholder는 입력값이 들어오기전까지 보여지고 있을 문자를 설정해준다, 예시 참조 -->
+
       <button onclick="addGreeting()">등록</button>
+      <!-- onclick(버튼 클릭시) addGreating 함수를 실행하도록 한다 -->
+
+      <!-- 버튼의 구성 기본: <button>들어올 글자<button> -->
+
+      <!-- 위와 같이 버튼을 눌렀을 시 작동하는 함수를 설정하고 싶으면 --> 
+      <!-- 앞의 <button> 괄호 안에 onclick을 설정한다-->
+
+      <!-- addGreating 함수는 js 파일에 정의되어 있고, 우리는 <script src="script.js" defer> 통해 -->
+      <!-- js파일을 호출하고 있기 때문에 바로 사용이 가능하다 -->
     </div>
     <div class="box">
       <h2>방명록 목록</h2>
       <ul id="greetingList">
-        <!-- 인삿말이 여기에 추가됩니다 -->
+        <!-- 인삿말이 여기에 추가된다 -->
       </ul>
+      <!-- ul = unordered list == 순서가 없는 리스트 -->
+      <!-- 우리가 인삿말을 저장하기 위해 사용하는 가장 기본적인 리스트 자료구조 -->
+
+      <!-- 이 list의 위치를 id="greetingList"를 통해 저장하면서 js파일에서 입력받은 값들을 -->
+      <!-- 어디에 노출시킬지 찾을 수 있도록 돕는다 -->
     </div>
     <div class="box">
       <button onclick="window.location.href='index.html'">자기소개 페이지로 돌아가기</button>

@@ -15,24 +15,24 @@ main {                                /* 본문 영역 */
   padding: 20px;                      /* 안쪽 여백 공간 띄우기 */
 }
 
-.box {
+.box {                                /* 박스 디자인 */
   background-color: #ffe4e1;
   padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
 }
 
-img {
+img {                                 /* 사진이 들어올 공간의 크기 */
   width: 150px;
   border-radius: 50%;
 }
 
-button {
+button {                              /* 버튼 디자인 */
   background-color: #ff7f50;
   color: white;
   border: none;
   padding: 10px;
-  cursor: pointer;
+  cursor: pointer;                    /* 버튼 영역 위에 마우스 커서가 올라왔을 때 어떻게 바뀔지 지정 */
   font-size: 16px;
 }
 
@@ -43,6 +43,6 @@ input[type="text"] {
 }
 
 ul {
-  list-style: none;
+  list-style: circle;                 /* 리스트를 어떻게 정렬할지 디자인을 정해줌 */
   padding-left: 0;
 }
