@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
   <!-- 사용되는 언어가 Korean, 한국어라는 표시 -->
+  <!-- 없어도 되지만, 나중에 구글 홈페이지 자동 번역 등에서 이 사이트의 언어를 뭘로 인지할지 정할 때 사용  -->
 
 <head>
-  <!-- head == 제목, 제목 부분과 페이지의 일부 기본 설정 -->
+  <!-- head = 제목, 제목 부분과 페이지의 일부 기본 설정 -->
 
   <meta charset="UTF-8">
   <!-- UTF-8은 한국어가 포함된 언어 패키지라고 생각하면된다 -->
-  <!-- 해당 패키지를 사용하면 한국어가 깨지는 상황을 방지할 수 있다 --> 
+  <!-- lang-"ko"와 달리 실제로 한국어가 사용가능하게 해주는 부분이다 --> 
 
   <title>나의 자기소개 페이지</title>
   <!-- 제목 -->
 
   <link rel="stylesheet" href="style.css">
-  <!-- link == 연결하다, rel = relationship == 관계성, href = hypertext reference == 참조링크 -->
-  <!-- 즉, style.css라는 외부파일(href)을 stylesheet라는 관계(rel)로 연결(link)한다 -->
+  <!-- link = 연결하다, rel(ationship) = 관계성, h(ypertext) ref(erence) = 참조링크 -->
+  <!-- 즉, style.css라는 외부파일의 링크(href)를 stylesheet라는 관계(rel)로 연결(link)한다 -->
 
-  <!-- 여기서 stylesheet도 html내에 지정된 단어로, 유저 맘대로 rel="스타일시트" 이런식으로 적으면 작동하지 않는다 -->
+  <!-- 여기서 stylesheet는 html내에 지정된 단어로, 유저 맘대로 rel="스타일시트" 이런식으로 적으면 작동하지 않는다 -->
+  <!-- href="style.css"에서 style.css는 스타일시트의 파일이름과 일치해야한다 -->
   <!-- style.css와 정상적으로 연동되기 위해서는 현재파일과 css파일이 같은 폴더내에 존재해야한다 -->
 </head>
 
@@ -30,14 +32,15 @@
   <main>
     <!-- 본문 -->
     <div class="box">
-      <!-- 박스로 영역을 나눠주는 기능, div = divide == 나누기 -->
+      <!-- 박스로 영역을 나눠주는 기능, div(ide) = 나누기 -->
       <!-- 박스의 크기와 디자인은 style.css에서 조정가능하다 -->
 
       <h2>소개</h2>
       <!-- 소제목, 보통 h1이 제목, h2가 소제목으로 정의된다 -->
+      <!-- 위에서 사용한 헤더의 약자다 -->
 
       <p>안녕하세요! 저는 중학생 웹 개발자를 꿈꾸고 있습니다.</p>
-      <!-- p = paragraph == 문단 -->
+      <!-- p(aragraph) = 문단 -->
       <!-- 본문 내용이 들어가는 문단을 나타낸다 -->
     </div>
     <!-- div를 닫아줌으로서 box의 영역에 해당내용까지만 들어가도록 한다 -->
@@ -49,15 +52,18 @@
       <h2>사진</h2>
       <img src="https://via.placeholder.com/150" alt="내 사진">
       <!-- 현재는 비어있는 사진, 본인의 사진을 넣고 싶을 경우 현재 파일과 같은 폴더에 -->
-      <!-- 원하는 사진을 저장하고 img src="셀카,jpg" 와 같이 수정하면 페이지에 사진이 나타난다 -->
+      <!-- 원하는 사진을 저장하고 img src="셀카.jpg" 와 같이, 사진파일을 저장한 이름으로 바꾸면 페이지에 사진이 나타난다 -->
     </div>
     <div class="box">
       <button onclick="window.location.href='guestbook.html'">방명록 남기기</button>
-      <!-- box와 마찬가지로 동작할 수 있는 버튼을 생성해주며, 디자인은 style.css에서 조정가능 -->
-      <!-- onclick == 버튼을 클릭하는 동작이 입력되었을 때 -->
-      <!-- window == 현재 브라우저 창 -> window.location == 현재 브라우저창의 주소를 담은 요소 -->
-      <!-- window.location.href == 현재 홈페이지 주소 ex) https://joazure0.github.io/my_webpage/index.html -->
-      <!-- 버튼이 눌릴 때 기존 자기소개 페이지에서 https://joazure0.github.io/my_webpage/guestbook.html 로 현주소를 변경 -->
+      <!-- box와 마찬가지로 동작할 수 있는 버튼을 생성해주며, 버튼의 디자인은 style.css에서 조정가능 -->
+      <!-- onclick = 버튼을 클릭하는 동작이 입력되었을 때 -->
+      
+      <!-- window = 현재 브라우저 창 -->
+      <!-- window.location = 현재 브라우저창의 주소 -->
+      <!-- window.location.href = 현재 홈페이지 주소를 연결하는 링크 -->
+      <!-- ex) https://joazure0.github.io/my_webpage/index.html -->
+      <!-- 버튼이 눌릴 때 현재 페이지 주소에서 index.html부분을 guestbook.html로 변경하여 이동 -->
     </div>
   </main>
 </body>
